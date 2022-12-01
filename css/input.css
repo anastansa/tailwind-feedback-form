@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        font-family: 'Poppins', sans-serif;
+        @apply text-darkblue
+    }
+}
+
+.rate-item {
+    @apply flex flex-col justify-center items-center w-full py-2 rounded border-2 border-sky bg-white cursor-pointer
+    hover:shadow-lg hover:shadow-blue/50 duration-300
+    lg:py-6
+}
