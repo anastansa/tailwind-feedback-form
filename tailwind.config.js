@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./*.html"],
+  darkMode: 'class',
   theme: {
     screens: {
       'md': '600px',
@@ -18,9 +19,6 @@ module.exports = {
         darkblue: '#121C51',
         blue: '#A3B8E8',
         pink: '#FF71A4',
-      },
-      rounded: {
-        'large': '20px',
       }
     },
   },

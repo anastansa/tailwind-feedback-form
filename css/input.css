@@ -14,4 +14,12 @@
     @apply flex flex-col justify-center items-center w-full py-2 rounded border-2 border-sky bg-white cursor-pointer
     hover:shadow-lg hover:shadow-blue/50 duration-300
     lg:py-6
+    dark:bg-slate-100 dark:border-lavender
+}
+
+.rate-toggle {
+    @apply relative appearance-none w-14 h-8 bg-slate-300 border-2 border-gray-100 rounded-3xl
+    dark:bg-neutral-900
+    after:content-[''] after:absolute after:top-px after:left-0.5 after:bg-white after:w-6 after:h-6 after:rounded-xl after:shadow-md
+    checked:after:left-6
 }
