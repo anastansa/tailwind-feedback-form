@@ -18,8 +18,12 @@
 }
 
 .rate-toggle {
-    @apply relative appearance-none w-14 h-8 bg-slate-300 border-2 border-gray-100 rounded-3xl
+    @apply relative appearance-none w-14 h-[31px] bg-slate-300 border-2 border-gray-100 rounded-3xl
     dark:bg-neutral-900
     after:content-[''] after:absolute after:top-px after:left-0.5 after:bg-white after:w-6 after:h-6 after:rounded-xl after:shadow-md
     checked:after:left-6
+}
+
+.active {
+    @apply border-2 border-pink shadow-none dark:border-pink dark:shadow-none
 }
