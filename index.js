@@ -39,9 +39,22 @@ inputValue.addEventListener('change', e => {
 submitBtn.addEventListener('click', e => {
   e.preventDefault()
   let selectedRate = document.querySelector('.active')
-  let params = {
-    rate: selectedRate.innerText,
-    reason: String(ratingReason).trim()
+  let errorMessage = document.querySelector('.error')
+  if(selectedRate) {
+    let params = {
+      rate: selectedRate.innerText,
+      reason: String(ratingReason).trim()
+    }
+    errorMessage.style.visibility = 'hidden'
+
+    //sending data, then:
+
+    selectedRate.classList.remove('active')
+    selectedRate = null
+    ratingReason = null
+    inputValue.value = ''
+  } else {
+    errorMessage.style.visibility = 'visible'
   }
 })
 
