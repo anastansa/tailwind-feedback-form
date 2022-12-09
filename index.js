@@ -40,12 +40,14 @@ submitBtn.addEventListener('click', e => {
   e.preventDefault()
   let selectedRate = document.querySelector('.active')
   let errorMessage = document.querySelector('.error')
+  let successMessage = document.querySelector('.success')
+
   if(selectedRate) {
     let params = {
       rate: selectedRate.innerText,
       reason: String(ratingReason).trim()
     }
-    errorMessage.style.visibility = 'hidden'
+    errorMessage.style.display = 'none'
 
     //sending data, then:
 
@@ -53,8 +55,9 @@ submitBtn.addEventListener('click', e => {
     selectedRate = null
     ratingReason = null
     inputValue.value = ''
+    successMessage.style.display = 'block'
   } else {
-    errorMessage.style.visibility = 'visible'
+    errorMessage.style.display = 'block'
   }
 })
 
