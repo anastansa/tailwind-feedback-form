@@ -12,7 +12,7 @@ rates.forEach(item => {
   ratesBlock.insertAdjacentHTML('beforeend',
     `<div class="rate-item">
             <img src="src/img/${item.img}" alt="amazing" class="h-12 w-12"/>
-            <p class="text-sm hidden md:block"> ${item.title} </p>
+            <p class="rate-text"> ${item.title} </p>
           </div>`
   )
 })

@@ -27,3 +27,7 @@
 .active {
     @apply border-2 border-pink shadow-none dark:border-pink dark:shadow-none
 }
+
+.rate-text {
+    @apply text-sm hidden md:block
+}
